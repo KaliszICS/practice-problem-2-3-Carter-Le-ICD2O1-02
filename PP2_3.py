@@ -31,14 +31,14 @@ def q3():
   bum3 = float(input("Input a number: "))
   bum2 = float(input("Input a number: "))
   bum1 = float(input("Input a number: "))
-  if bum3 == bum2 == bum1:
+  if (bum1 + bum2) <= bum3 or (bum2 + bum3) <= bum1 or (bum3 + bum1) <= bum2:
+    print("No Triangle")
+  elif bum3 == bum2 == bum1:
     print("Equilateral")
   elif bum1 == bum2 or bum2 == bum3 or bum3 == bum1:
     print("Isosceles")
-  elif not bum3 == bum2 == bum1:
+  else:
     print("Scalene")
-  elif (bum1 + bum2) == bum3 or (bum2 + bum3) == bum1 or (bum3 + bum1) == bum2:
-    print("No triangle")
 
 
 
